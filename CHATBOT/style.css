@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #1a1a1a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+}
+
+/* Container do Chat */
+.chat-container {
+    width: 80%;
+    height: 95%;
+    background-color: #242424;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+
+.chat-header {
+    background-color: #2d2d2d;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #000; /* Fundo preto para o ícone */
+    object-fit: cover;
+}
+
+.info .name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.info .status {
+    font-size: 0.8rem;
+    color: #4caf50;
+}
+
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1e1e1e;
+}
+
+
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #3d3d3d;
+    border-radius: 10px;
+}
+
+.message {
+    max-width: 80%;
+    display: flex;
+
+}
+
+.bubble {
+    padding: 10px 15px;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.bot {
+    align-self: flex-start;
+}
+
+.bot .bubble {
+    background-color: #333;
+    color: #fff;
+    border-bottom-left-radius: 2px;
+}
+
+
+.user {
+    align-self: flex-end;
+}
+
+.user .bubble {
+    background-color: #005bb5; /* Tom azul sóbrio */
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+
+.chat-input {
+    padding: 15px;
+    background-color: #2d2d2d;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    background-color: #3d3d3d;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0078e7;
+
+}
