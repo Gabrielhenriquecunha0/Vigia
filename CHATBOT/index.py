@@ -20,6 +20,10 @@ from flask_cors import CORS
 from dotenv import load_dotenv 
 
 
+@app.route('/')
+def home():
+    return "Olá! Seu deploy em Python funcionou!"
+
 load_dotenv()
 
 
